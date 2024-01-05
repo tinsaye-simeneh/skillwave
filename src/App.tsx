@@ -1,12 +1,17 @@
 import React from "react";
-import { Button } from "@mantine/core";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Homepage from "./pages/Home";
+import { MantineProvider } from "@mantine/core";
 
 const App: React.FC = () => {
   return (
-    <div>
-      <h1>Hello Mantine!</h1>
-      <Button>Hello Button</Button>
-    </div>
+    <MantineProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </Router>
+    </MantineProvider>
   );
 };
 
