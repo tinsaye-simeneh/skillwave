@@ -1,4 +1,3 @@
-// src/pages/Homepage.tsx
 import React from "react";
 import { Container, Grid, Title, Text } from "@mantine/core";
 
@@ -8,7 +7,7 @@ const Homepage: React.FC = () => {
       {/* Header */}
       <header>
         <Container>
-          <h1>Your Website</h1>
+          <h1 className="text-blue-500">Your Website</h1>
         </Container>
       </header>
 
